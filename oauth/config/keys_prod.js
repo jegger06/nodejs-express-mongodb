@@ -5,5 +5,8 @@ module.exports = {
   },
   mongodb: {
     dbURI: ''
+  },
+  session: {
+    cookieKey: ''
   }
 }
