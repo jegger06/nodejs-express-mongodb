@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const path = require('path');
 
 // Load Keys
 const keys = require('./config/keys');
@@ -18,6 +19,9 @@ mongoose.connect(keys.mongoURI, {
   useMongoClient: true
 }).then(() => console.log('MongoDB Connected...'))
   .catch((err) => console.log('MongoDB Connection Error: ', err));
+
+// Set the static folder
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Body Parser Middleware
 app.use(bodyParser.json());
