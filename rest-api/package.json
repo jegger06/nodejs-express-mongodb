@@ -1,0 +1,16 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "A simple rest API which uses the mongodb, express and nodejs.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "Jegger Saren",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.4"
+  }
+}
